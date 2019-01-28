@@ -1,0 +1,25 @@
+@mixin defineFont($fontFamily, $fileName) {
+    $fonts-url: $base-url + '/styles/fonts/';
+    @font-face {
+        font-family: $fontFamily;
+        src: url($fonts-url + $fileName +'.otf') format('truetype'); /* Safari, Android, iOS */
+        src: url($fonts-url + $fileName +'.eot');
+        src: url($fonts-url + $fileName +'.eot?#iefix') format('embedded-opentype'),
+        url($fonts-url + $fileName +'.woff2') format('woff2'),
+        url($fonts-url + $fileName +'.woff') format('woff'),
+        url($fonts-url + $fileName +'.ttf') format('truetype'),
+        url($fonts-url + $fileName +'.svg#'+ $fileName) format('svg');
+    }
+}
+
+@include defineFont('Flama', 'Flama-Basic');
+@include defineFont('Flama-Bold', 'Flama-Bold');
+@include defineFont('Flama-Book', 'Flama-Book');
+@include defineFont('Flama-BookItalic', 'Flama-BookItalic');
+@include defineFont('Flama-Light', 'Flama-Light');
+@include defineFont('Flama-Medium', 'Flama-Medium');
+@include defineFont('Flama-MediumItal', 'Flama-MediumItalic');
+@include defineFont('Flama-Thin', 'Flama-Thin');
+@include defineFont('FlamaCondensed-Book', 'FlamaCondensed-Book');
+@include defineFont('FlamaCondensed-Medium', 'FlamaCondensed-Medium');
+@include defineFont('FlamaCondensed-Bold', 'FlamaCondensed-Bold');
