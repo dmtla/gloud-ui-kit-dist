@@ -1,6 +1,6 @@
 {
   "name": "gloud-ui-kit",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "assets and common ui styles for any gloud project",
   "main": "index.js",
   "scripts": {
