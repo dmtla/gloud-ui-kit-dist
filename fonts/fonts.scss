@@ -1,14 +1,13 @@
 @mixin defineFont($fontFamily, $fileName) {
-    $fonts-url: $base-url + '/styles/fonts/';
+    $fontFileName: './' + $fileName;
     @font-face {
         font-family: $fontFamily;
-        src: url($fonts-url + $fileName +'.otf') format('truetype'); /* Safari, Android, iOS */
-        src: url($fonts-url + $fileName +'.eot');
-        src: url($fonts-url + $fileName +'.eot?#iefix') format('embedded-opentype'),
-        url($fonts-url + $fileName +'.woff2') format('woff2'),
-        url($fonts-url + $fileName +'.woff') format('woff'),
-        url($fonts-url + $fileName +'.ttf') format('truetype'),
-        url($fonts-url + $fileName +'.svg#'+ $fileName) format('svg');
+        src: url($fontFileName +'.eot');
+        src: url($fontFileName +'.eot?#iefix') format('embedded-opentype'),
+        url($fontFileName +'.woff2') format('woff2'),
+        url($fontFileName +'.woff') format('woff'),
+        url($fontFileName +'.ttf') format('truetype'),
+        url($fontFileName +'.svg#'+ $fileName) format('svg');
     }
 }
 
