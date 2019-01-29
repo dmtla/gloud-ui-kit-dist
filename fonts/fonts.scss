@@ -1,5 +1,6 @@
 @mixin defineFont($fontFamily, $fileName) {
-    $fontFileName: './' + $fileName;
+    $fontPath:'./' !default;
+    $fontFileName: $fontPath + $fileName;
     @font-face {
         font-family: $fontFamily;
         src: url($fontFileName +'.eot');
