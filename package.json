@@ -1,0 +1,19 @@
+{
+  "name": "gloud-ui-kit",
+  "version": "1.0.0",
+  "description": "assets and common ui styles for any gloud project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dmtla/gloud-ui-kit.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dmtla/gloud-ui-kit/issues"
+  },
+  "homepage": "https://github.com/dmtla/gloud-ui-kit#readme"
+}
