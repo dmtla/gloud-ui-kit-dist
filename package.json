@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/dmtla/gloud-ui-kit/issues"
   },
-  "homepage": "https://github.com/dmtla/gloud-ui-kit#readme"
+  "homepage": "https://github.com/dmtla/gloud-ui-kit#readme",
+  "dependencies": {
+    "sass-extract": "^2.1.0",
+    "sass-extract-js": "^0.4.0",
+    "sass-extract-loader": "^1.1.0"
+  }
 }
