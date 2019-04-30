@@ -1,12 +1,13 @@
-import colors from 'sassextractloader?{"plugins": ["sassextractjs"]}!../colors.scss';
-import screenSizes from 'sassextractloader?{"plugins": ["sassextractjs"]}!../screenSizes.scss';
+import colors from 'sassextract-loader?{"plugins": ["sassextractjs"]}!../colors.scss';
+import screenSizes from 'sassextract-loader?{"plugins": ["sassextractjs"]}!../screenSizes.scss';
 
+const extractorColor = (prop) => colors[prop];
+export const extractColorsAccentBase = extractorColor('colorsAccentBase');
 
-// Example
-//export const extractColorsAccentBase = createExtractorFromTheme('colorsAccentBase')',
+console.log(colors);
 
 const colors = {
-    accent: '#e20175',
+    accent: extractorColor('colorsAccentBase'),
     accentCompanion: '#a23964',
     accentInverted: '#00ffce',
   //  accentInvertedCompanion: darken(accentInverted, 7),
