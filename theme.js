@@ -1,10 +1,10 @@
-import {createTheme as familyTheme} from 'themes/familyTheme'
-import {createTheme as gamerTheme} from 'themes/gamerTheme'
+import {createTheme as familyTheme} from './themes/familyTheme.js'
+import {createTheme as gamerTheme} from './themes/gamerTheme.js'
 
 const family = "family";
 const gamer = "gamer";
 
-export function createTheme(theme) {
+export default function createTheme(theme) {
     if(theme == family) {
         return familyTheme;
     }

@@ -3,6 +3,10 @@ $colors-brand-base: #002b44;
 $colors-brand-dark: #032232;
 
 $colors-accent-base: #e20175;
+$colors-accent-companion: #a23964;
+
+$colors-accent-inverted-base: #00ffce;
+$colors-accent-inverted-companion: darken($colors-accent-inverted-base, 7);
 
 $colors-secondary-base: #18907e;
 $colors-secondary-light: #00ffce;
@@ -13,10 +17,18 @@ $colors-neutral-lighter: white;
 $colors-neutral-dark: black;
 $colors-neutral-darker: black;
 
+$colors-title: #344954;
+
+//family palette
+$lipstick: #ba0772;
+$aquamarine: #89ffc8;
+$tulipTree: #e4af2c;
+$purple: #6b00ab;
+$silverSand: #bfc1c1;
+
 //Companion pairs
 $colors-brand-companion: $colors-neutral-lighter;
 $colors-accent-companion: $colors-secondary-light;
 $colors-secondary-companion: $colors-neutral-lighter;
 $colors-neutral-companion: $colors-neutral-lighter;
 
-// podria dejar estas clases y que en los theme extraingan los valores.

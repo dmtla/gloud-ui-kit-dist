@@ -1,43 +1,48 @@
-import colors from 'sassextract-loader?{"plugins": ["sassextractjs"]}!../colors.scss';
-import screenSizes from 'sassextract-loader?{"plugins": ["sassextractjs"]}!../screenSizes.scss';
+import sassColors from 'sass-extract-loader?{"plugins": ["sass-extract-js"]}!../colors.scss';
+import sassScreenSizes from 'sass-extract-loader?{"plugins": ["sass-extract-js"]}!../screenSizes.scss';
 
-const extractorColor = (prop) => colors[prop];
-export const extractColorsAccentBase = extractorColor('colorsAccentBase');
-
-console.log(colors);
+const extractorColor = (prop) => sassColors[prop];
+const extractorScreenSize = (prop) => sassScreenSizes[prop];
 
 const colors = {
     accent: extractorColor('colorsAccentBase'),
-    accentCompanion: '#a23964',
-    accentInverted: '#00ffce',
-  //  accentInvertedCompanion: darken(accentInverted, 7),
-    secondary: '#002b44',
-    secondaryDark: '#032232',
-    primaryInverted: '#e4e4e4',
-    neutral: '#77848a',
-    title: '#344954',
-    whiteSmoke: '#f3f3f3',
-    neutralLighter: '#fafafa'
+    accentCompanion: extractorColor('colorsAccentCompanion'),
+    accentInverted: extractorColor('colorsAccentInvertedBase'),
+    accentInvertedCompanion: extractorColor('colorsAccentInvertedCompanion'),
+    colorBrandBase: extractorColor('colorBrandBase'),
+    colorBrandDark: extractorColor('colorBrandDark'),
+    colorSecondaryBase: extractorColor('colorSecondaryBase'),
+    colorNeutralBase: extractorColor('colorNeutralBase'),
+    colorSecondaryLight: extractorColor('colorSecondaryLight'),
+    colorSecondaryLighter: extractorColor('colorSecondaryLighter'),
+    colorSecondaryDark: extractorColor('colorSecondaryDark'),
+    colorSecondaryDarker: extractorColor('colorSecondaryDarker'),
+    colorTitle: extractorColor('colorTitle'),
 }
 
-//Colors
-/*
-$gloudbackgroundcolor: secondary','
-$gloudbackgrounddetailpagecolor: secondarydark','
-$activebutton: accent','
-$activebuttonhover: accentinverted','
-$glouddetailtextcolor: neutral','
-$gloudcleartextcolor: primaryinverted','
-secondarybutton: '#18907e',
-primarybuttonhover: accentinverted','
-primarybuttonhovertext: black','
-}*/
+const fontFamilies = {
+    title: 'Flama-Bold',
+    text: 'Flama-Book',
+    strong: 'Flama-Bold',
+    legalDisclaimer: 'FlamaCondensed-Book'
+}
 
-const fontFamilies = {}
+const fontSizes = {
+    small: '1rem',
+    medium: '1.3rem',
+    large: '1.6rem',
 
-const fontSizes = {}
+}
 
-const margins = {}
+const margins = {
+    left: '15px'
+}
+
+const screenSizes = {
+    maxMobile: extractorScreenSize('screenXsMax'),
+    maxNotebook: extractorScreenSize('screenMdMax')
+
+}
 
 export const createTheme = {
     colors, fontFamilies, fontSizes, margins, screenSizes
