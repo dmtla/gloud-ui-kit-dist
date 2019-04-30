@@ -1,14 +1,16 @@
 import {createTheme as familyTheme} from './themes/familyTheme.js'
 import {createTheme as gamerTheme} from './themes/gamerTheme.js'
 
-const family = "family";
-const gamer = "gamer";
+export const themeNames = {
+    FAMILY: "family",
+    GAMER: "gamer"
+}
 
 export default function createTheme(theme) {
-    if(theme == family) {
+    if(themeNames.FAMILY == theme) {
         return familyTheme;
     }
-    if(theme == gamer) {
+    if(themeNames.GAMER == gamer) {
         return gamerTheme;
     }
 }
