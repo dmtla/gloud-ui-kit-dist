@@ -35,6 +35,6 @@ const screenSizes = {
     maxNotebook: extractorScreenSize('screenMdMax')
 }
 
-export const createTheme = {
+export const theme = {
     colors, fontFamilies, fontSizes, margins, screenSizes
 }
