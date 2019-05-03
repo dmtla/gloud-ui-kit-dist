@@ -13,10 +13,10 @@ const colors = {
     colorBrandDark: extractorColor('colorsBrandDark'),
     colorSecondaryBase: extractorColor('colorsSecondaryBase'),
     colorNeutralBase: extractorColor('colorsNeutralBase'),
-    colorSecondaryLight: extractorColor('colorsSecondaryLight'),
-    colorSecondaryLighter: extractorColor('colorsSecondaryLighter'),
-    colorSecondaryDark: extractorColor('colorsSecondaryDark'),
-    colorSecondaryDarker: extractorColor('colorsSecondaryDarker'),
+    colorNeutralLight: extractorColor('colorsNeutralLight'),
+    colorNeutralLighter: extractorColor('colorsNeutralLighter'),
+    colorNeutralDark: extractorColor('colorsNeutralDark'),
+    colorNeutralDarker: extractorColor('colorsNeutralDarker'),
     colorTitle: extractorColor('colorsTitle'),
 }
 
