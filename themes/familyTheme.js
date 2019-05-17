@@ -20,15 +20,17 @@ const fontFamilies = {
     title: 'Flama-Bold',
     text: 'Flama-Book',
     strong: 'Flama-Bold',
+    light: `Flama-Semibold`,
     legalDisclaimer: 'FlamaCondensed-Book',
-    h2: `Flama-Semibold`
+    h2: `Flama-Light`
 }
 
 const fontSizes = {
     small: '1rem',
     medium: '1.3rem',
     large: '1.6rem',
-    h1: '2.5rem',
+    h1: '2.4rem',
+    button: '2rem',
     cardTitle: '1.6rem',
 }
 
