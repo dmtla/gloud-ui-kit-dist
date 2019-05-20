@@ -20,7 +20,8 @@ const fontFamilies = {
     title: 'Flama-Bold',
     text: 'Flama-Book',
     strong: 'Flama-Bold',
-    light: `Flama-Semibold`,
+    light: `Flama-Light`,
+    semiBold: `Flama-Semibold`,
     legalDisclaimer: 'FlamaCondensed-Book',
     h2: `Flama-Light`
 }
